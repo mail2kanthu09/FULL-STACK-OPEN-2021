@@ -1,0 +1,27 @@
+title part0.5
+
+browser->server: sends a request to server using POST METHOD
+
+note over browser:
+browser starts executing the text field data entered by the user. text is saved. 
+end note
+server->browser: STATUS 201
+browser->server:Remote Address: 128.214.9.77:443
+browser->server:Referrer Policy: strict-origin-when-cross-origin
+server->browser: Response Headers:content-length: 26
+server->browser:content-type: application/json; charset=utf-8
+server->browser:date: Sun, 09 May 2021 14:00:17 GMT
+server->browser:server: nginx/1.18.0
+note over server
+server sends its response type and date, content type etc
+end note 
+browser->server: request headers
+browser->server: authority: studies.cs.helsinki.fi
+browser->server:method: POST
+browser->server:path: /exampleapp/new_note_spa
+browser->server:scheme: https
+
+note over browser
+browser sends its request type as authority, method:POST, path, scheme etc
+end note 
+
